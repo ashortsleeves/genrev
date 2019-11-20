@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang ="en">
+<head>
+
+	<!--
+		CIS 131 Final Project
+		Your Name: Jon Bergman
+		Today's Date: 12/6/15
+
+	-->
+
+		<title>Gen Rev Outdoor Club</title>
+		<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+		<link rel="stylesheet" href="genrevstyles.css" type="text/css" />
+		<link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
+		<link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
+</head>
+
+<body>
+	<!-- container for nav -->
+	<section id = "container">
+		<header>
+			<a href = "index.html"><img class="banner" src="images/genrevbanner.png" alt = "Gen Rev Outdoor Club" width = 562 height = 138 /></a>
+		</header>
+
+		<nav onclick="myFunction(this)">
+			<div class="nav-icon" onclick="myFunction(this)">
+			  <div class="bar1"></div>
+			  <div class="bar2"></div>
+			  <div class="bar3"></div>
+			</div>
+
+			<ul>
+				<li><a href="index.html" title = "Return Home">About</a></li>
+				<li><a href="calendar.html" title = "Calendar of Events">Calendar</a></li>
+				<li><a href="hikes.html" title = "Our Favorite Hikes">Hikes</a></li>
+				<li><a href="events.html" title = "Popular Events">Events</a></li>
+				<li><a href="https://www.facebook.com/groups/1452595711647692/" target="blank" title = "Join our Facebook Group">Facebook Group</a></li>
+				<li><a href="mailto:contact@genrev.club" title = "Send Us an Email">Email Us</a></li>
+			</ul>
+		</nav>
+
+	</section>
+
+	<!-- favorite hikes, image map -->
+	<section id = "hikeinfo">
+
+	<h2>Our Favorite Hikes</h2>
+
+	<img class = "right" src = "images/mainemap.png" alt = "clickable map of Maine" usemap = "#mainehikes" width=250 height=321 />
+
+	<map name="mainehikes">
+		<area shape = "rect" coords = "0,0,125,160" alt = "north west quadrant" href = "#GulfHagas" />
+		<area shape = "rect" coords = "125,0,250,160" alt = "north east quadrant" href = "#ChickHill" />
+		<area shape = "rect" coords = "0,160,125,321" alt = "south west quadrant" href = "#MtKineo" />
+		<area shape = "rect" coords = "125,160,250,321" alt = "south east quadrant" href = "#BaldMtn" />
+		<area shape = "circle" coords = "190,286,36" alt = "click legend brings back to top" href = "#hikeinfo" />
+		<area shape = "poly" coords = "0,0,0,152,100,0" alt = "click nw white space brings back to top" href = "#hikeinfo" />
+		<area shape = "poly" coords = "200,0,210,120,250,170,250,0" alt = "click ne white space brings back to top" href = "#hikeinfo" />
+		<area shape = "poly" coords = "30,320,250,200,250,320" alt = "click sw white space legend brings back to top" href = "#hikeinfo" />
+	</map>
+	<p class = "left">Click the elevation map to scroll to a hike (approximately) near that area of the state.</p>
+
+	</section>
+
+	<section id = "GulfHagas">
+	<h2>Gulf Hagas</h2>
+	<p>Gulf Hagas is one of our favorite places to hike (and swim!) every summer in Maine.  Called "The Grand Canyon of Maine," this hike offers stupendous views and many waterfalls to admire or swim in. This Gen Rev'er took the plunge - you should too!</p>
+	<img src = "images/ghjump.png" alt = "an image capturing a young woman jumping from a small cliff, arms wide, into the pool of a waterfall" width = 510 height = 338 />
+		<div class="clear">
+	<a href = "#container" title = "Back to Top">Top</a>
+		</div>
+	</section>
+
+	<section id = "ChickHill">
+	<h2>Chick Hill</h2>
+	<p>Chick Hill is a local hike found near Clifton.  It's a short drive from the Bangor area.  Hikers may ascend via a trail through the woods or an access road.  There are great views from the top and lots of wild blueberries in season.  Look for "Big Chick" and "Little Chick" as you drive around.  You can see it while driving north on I-95 just before crossing the Bangor city line, from the hills of Brewer, from the country club in Orono, or from lots of other spots in the region.</p>
+	<img src = "images/bigchick.png" alt = "a view of the cliff on the side of Big Chick Hill" width = 500 height = 335 />
+		<div class="clear">
+	<a href = "#container" title = "Back to Top">Top</a>
+		</div>
+	</section>
+
+	<section id = "MtKineo">
+	<h2>Mt. Kineo</h2>
+	<p>Mt. Kineo is a special place in Maine.  An observation tower sits atop cliffs of flint which jut out of Moosehead Lake.  Climbing to the top affords spectacular 360&deg; views of Moosehead Lake.  Call (207) 534-9012 for information on the ferry to Mt. Kineo, which also takes passengers to the Mt. Kineo Golf Course.</p>
+	<img src = "images/kineotower.png" alt = "agroup enjoyes the view from the observation tower atop Mt. Kineo" width = 509 height = 338 />
+		<div class="clear">
+	<a href = "#container" title = "Back to Top">Top</a>
+		</div>
+	</section>
+
+	<section id = "BaldMtn">
+	<h2>Bald Mountain</h2>
+	<p>Bald Mountain is a hike very close to the Bangor area, located in Dedham.  It's steep but short, the views providing big payoff for not a lot of work.  The west side of the peak looks over Lucerne Lake, Bangor, and out to Kahtahdin, while the east side of the peak looks over the lakes of the Ellsworth region and the peaks of Mount Dessert Island.  Here lies the site of a former ski mountain, and you can still find some of the concrete footings for the ski lift if you look hard enough.</p>
+	<img src = "images/bald.png" alt = "a man and some children look out over Ellsworth from the top of Bald Mountain" width = 509 height = 338 />
+		<div class="clear">
+	<a href = "#container" title = "Back to Top">Top</a>
+		</div>
+	</section>
+
+	<!-- suggestion form plug -->
+<footer>
+	<h4 class = "infomarg">To suggest an adventure, please <a href="mailto:contact@genrev.club" title = "Send Us an Email">email us</a> or complete the <a href="events.html#suggest" title = "Suggestion form">suggestion form on the Events page</a>.</h4>
+</footer>
+
+</body>
+<script src="menu.js"></script>
+</html>

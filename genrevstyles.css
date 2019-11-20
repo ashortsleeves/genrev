@@ -1,0 +1,256 @@
+/*
+	genrevstyles.css
+	CIS 131 Final Project
+	Jon Bergman
+	12/5/15
+*/
+
+img.banner {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		padding: 1em;
+}
+
+#container {
+		width: 80%;
+		margin: 2em auto;
+		padding: .2em;
+		border: ridge black;
+}
+
+nav {
+		border-top: solid thin black;
+		padding: 0;
+		text-align: center;
+}
+
+nav ul li {
+		width: 80%;
+		margin-right: 2.5em;
+		display: inline;
+}
+
+nav ul li a 	{
+		font-weight: bold;
+		color: #00006B;
+		font-size: 1.2em;
+}
+
+nav ul li a:hover {
+		font-weight: 200;
+		color: #0000CC;
+}
+
+h2 {
+		border-top: solid thin #000033;
+		padding-top: 0.5em;
+}
+
+h4 {
+		border-bottom: solid thin #000033;
+		padding-bottom: 2em;
+}
+
+h4.infomarg {
+		margin-left: 2em;
+		margin-right: 2em;
+}
+
+body {
+		background-color: #DDCB9A;
+		font-size: 1em;
+		color: #000033;
+		font-family: Calibri, Candara, Segoe, Segoe UI, Optima, Arial, sans-serif;
+}
+
+#about {
+		margin: 2em;
+
+}
+
+#about a:link {
+		text-decoration: none;
+}
+
+#about a:hover{
+		color: #000033;
+		text-decoration:underline;
+}
+
+p.abouttext {
+		padding-top: 1em;
+}
+
+div.clear {
+		clear: both;
+
+}
+
+img.right {
+		border: black;
+		float: right;
+		margin: 0 2em 1em 2em;
+		clear: none;
+}
+
+img.left {
+		border: black;
+		float: left;
+		margin: 1em 2em 1em 0;
+		clear: none;
+}
+
+
+p.lefttext {
+		float: left;
+		clear: none;
+}
+
+#datatable {
+		margin: 2em;
+		float: left;
+		clear: none;
+}
+
+#datatable table {
+		margin: 0;
+		border: solid .2em #000033;
+		border-collapse: collapse;
+		float: left;
+		clear: none;
+}
+
+#datatable th, td {
+		margin: 0;
+		border: solid .08em #331a00;
+		text-align: center;
+		padding: .2em;
+}
+
+#datatable tr.stripe {
+		background-color: #bf9d40;
+}
+
+#googlecalendar iframe {
+		width: 80%;
+		margin-right: 10%;
+		margin-left: 10%;
+}
+
+#thumbs {
+		padding: 2em;
+}
+
+form {
+		border: solid .08em #331a00;
+		padding: 0.1em;
+}
+
+#suggest {
+		width: 33%;
+		float: right;
+		margin-left: 2em;
+}
+
+#formdisclaim {
+		font-size: 33%;
+		font-style: italic;
+}
+
+footer {
+		clear: both; text-align: center;
+}
+
+
+@media only screen and (max-width: 767px) {
+	img {
+		max-width: 100%;
+		height: auto;
+		box-sizing: border-box;
+	}
+
+	section {
+		width: 100% !important;
+		box-sizing: border-box;
+		margin-left: 0 !important;
+		margin-right: 0 !important;
+	}
+
+	img.right,
+	img.left {
+		float: none;
+		margin: 0;
+	}
+
+	nav {
+		position: fixed;
+		left: 100%;
+		top: 0;
+		bottom: 0;
+		width: 260px;
+		background-color: #DDCB9A;
+		border-top: transparent;
+		transition: 0.3s;
+	}
+
+	nav ul {
+		display: flex;
+		flex-direction: column;
+		padding-top: 30px;
+	}
+
+	nav ul li {
+		text-align: left;
+		margin-bottom: 30px;
+	}
+
+	nav ul li a 	{
+			font-size: 1.4em;
+	}
+
+	.nav-icon {
+	  display: inline-block;
+	  cursor: pointer;
+		position: absolute;
+		right: 100%;
+		top: 0;
+		background-color: #DDCB9A;
+		padding: 2px 8px;
+		border-bottom-left-radius: 5px;
+		-webkit-box-shadow: -5px 3px 44px -1px rgba(0,0,0,0.61);
+		-moz-box-shadow: -5px 3px 44px -1px rgba(0,0,0,0.61);
+		box-shadow: -5px 3px 44px -1px rgba(0,0,0,0.61);
+	}
+
+	.bar1, .bar2, .bar3 {
+	  width: 35px;
+	  height: 5px;
+	  background-color: #00006B;
+	  margin: 6px 0;
+	  transition: 0.4s;
+	}
+
+	.change .bar1 {
+	  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+	  transform: rotate(-45deg) translate(-9px, 6px);
+	}
+
+	.change .bar2 {opacity: 0;}
+
+	.change .bar3 {
+	  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+	  transform: rotate(45deg) translate(-8px, -8px);
+	}
+
+	nav.change {
+		left: calc(100% - 260px);
+		-webkit-box-shadow: -5px 3px 44px -1px rgba(0,0,0,0.61);
+		-moz-box-shadow: -5px 3px 44px -1px rgba(0,0,0,0.61);
+		box-shadow: -5px 3px 44px -1px rgba(0,0,0,0.61);
+	}
+
+	#container {
+		overflow: hidden;
+	}
+}

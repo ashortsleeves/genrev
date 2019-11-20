@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang ="en">
+<head>
+
+	<!--
+		CIS 131 Final Project
+		Your Name: Jon Bergman
+		Today's Date: 12/6/15
+
+	-->
+
+		<title>Gen Rev Outdoor Club</title>
+		<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+		<link rel="stylesheet" href="genrevstyles.css" type="text/css" />
+		<link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
+		<link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
+</head>
+
+<body>
+	<!-- container for nav -->
+	<section id = "container">
+		<header>
+			<a href = "index.html"><img class="banner" src="images/genrevbanner.png" alt = "Gen Rev Outdoor Club" width = 562 height = 138 /></a>
+		</header>
+
+		<nav onclick="myFunction(this)">
+			<div class="nav-icon" onclick="myFunction(this)">
+			  <div class="bar1"></div>
+			  <div class="bar2"></div>
+			  <div class="bar3"></div>
+			</div>
+
+			<ul>
+				<li><a href="index.html" title = "Return Home">About</a></li>
+				<li><a href="calendar.html" title = "Calendar of Events">Calendar</a></li>
+				<li><a href="hikes.html" title = "Our Favorite Hikes">Hikes</a></li>
+				<li><a href="events.html" title = "Popular Events">Events</a></li>
+				<li><a href="https://www.facebook.com/groups/1452595711647692/" target="blank" title = "Join our Facebook Group">Facebook Group</a></li>
+				<li><a href="mailto:contact@genrev.club" title = "Send Us an Email">Email Us</a></li>
+			</ul>
+		</nav>
+
+	</section>
+
+	<!-- popular events, thumbnails, & suggestion form -->
+	<section id = "eventinfo">
+	<h2>Outdoor Events</h2>
+	<img src="images/group.png" alt = "a large group photo" width = 869 height = 338>
+	<p>Here's the group from our 2015 BBQ Potluck.</p>
+	</section>
+
+	<section id = "suggest">
+	<h3>Suggest an adventure!</h3>
+	<form id = "suggestform" action="mailto:contact@genrev.club?subject=Adventure%20Suggestion%20for%20Gen%20Rev%20from%20Web%20Form" method="post" enctype="text/plain">
+		<fieldset><legend>Is this event...?</legend>
+			<input type = "radio" name = "activity level" id = "active" value = "active" />
+			<label for = "active">Active (hiking, paddling, biking, etc.)</label>
+		<br>
+			<input type = "radio" name = "activity level" id = "social" value = "social" />
+			<label for = "social">Social (picnic, gathering, sporting event, etc.)</label>
+		</fieldset>
+
+		<fieldset><legend>Where would this adventure be?</legend>
+			<label for = "location">Location (approximations/suggestions are fine)</label>
+			<input type = "text" name = "location" id = "location" size = "35" />
+		</fieldset>
+
+		<fieldset><legend>What are the details?</legend>
+			<label for = "suggestion">Describe this adventure:</label>
+			<textarea name = "suggestion" id = "suggestion" rows = "10" cols = "35"></textarea>
+		</fieldset>
+
+		<fieldset><legend>May we contact you?</legend>
+			<label for = "contactinfo">Email/phone (optional)</label>
+			<input type = "text" name = "contactinfo" id = "contactinfo" size = "35" />
+		</fieldset>
+
+		<p style="font-size:12px;font-style:italic">Form values may not populate submission email with all browsers.</p>
+		<input type = "submit" value = "Send Suggestion" class = "button" />
+		<input type = "reset" value = "Reset" class = "button" />
+
+	</form>
+	</section>
+
+		<section id = "picnic">
+	<h2>Annual BBQ Potluck & Games</h2>
+	<p>Every summer Gen Rev gathers for a huge BBQ potluck with lots of food and games.  We fire up three or four grills and share meat and sides.  We play volleyball, whiffle ball, croquet, frisbee, relay races, pie eating contest and other fun games.</p>
+	<img src = "images/wiffle.png" alt = "a group plays wiffle ball" width = 510 height = 338 />
+		<div class = "thumbs">
+		<p>Click these thumbnails for more potluck games photos!</p>
+		<a href = "images/egg.png" title = "egg race"><img src = "images/egg_tn.png" alt = "thumbnail link to egg race photo"></a>
+		<a href = "images/volley.png" title = "volleyball"><img src = "images/volley_tn.png" alt = "thumbnail link to volleyball photo"></a>
+		<a href = "images/sack.png" title = "sack race"><img src = "images/sack_tn.png" alt = "thumbnail link to sack race photo"></a>
+		</div>
+		<div class="clear">
+	<a href = "#container" title = "Back to Top">Top</a>
+		</div>
+	</section>
+
+	<section id = "forest">
+	<h2>City Forest Walk</h2>
+	<p>The Bangor City Forest is a hidden gem, 680 acres of wonderful wilderness right near the Bangor Mall area.  Gen Rev gathers in the late spring each year for a Sunday afternoon walk.</p>
+	<img src = "images/forest.png"	alt = "a large group poses for a group picture at Bangor City Forest" width = 510 height = 338 />
+		<div class="clear">
+	<a href = "#container" title = "Back to Top">Top</a>
+		</div>
+	</section>
+
+	<section id = "ski">
+	<h2>Ski & Snowshoe Trips</h2>
+	<p>Cold snowy weather is no reason to stay inside!  Gen Rev loves taking trips to Maine ski mountains, or going snowshoeing or cross country skiing locally.</p>
+	<img src = "images/skicampden.png" alt = "a group of adult and children skiiers at the bottom of the slope" width = 510 height = 338 />
+		<div class="clear">
+	<a href = "#container" title = "Back to Top">Top</a>
+		</div>
+	</section>
+
+	<!-- suggestion form plug -->
+<footer>
+	<h4 class = "infomarg">To suggest an adventure, please <a href="mailto:contact@genrev.club" title = "Send Us an Email">email us</a> or complete the <a href="events.html#suggest" title = "Suggestion form">suggestion form on the Events page</a>.</h4>
+</footer>
+
+</body>
+<script src="menu.js"></script>
+</html>

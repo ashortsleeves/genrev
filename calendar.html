@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang ="en">
+<head>
+
+	<!--
+		CIS 131 Final Project
+		Your Name: Jon Bergman
+		Today's Date: 12/6/15
+
+	-->
+
+		<title>Gen Rev Outdoor Club</title>
+		<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+		<link rel="stylesheet" href="genrevstyles.css" type="text/css" />
+		<link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
+		<link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
+</head>
+
+<body>
+	<style scoped>
+		body {
+			background-image: url("images/calendar.jpg");
+		}
+	</style>
+	<!-- container for nav -->
+	<section id = "container">
+		<header>
+			<a href = "index.html"><img class="banner" src="images/genrevbanner.png" alt = "Gen Rev Outdoor Club" width = 562 height = 138 /></a>
+		</header>
+
+		<nav onclick="myFunction(this)">
+			<div class="nav-icon" onclick="myFunction(this)">
+			  <div class="bar1"></div>
+			  <div class="bar2"></div>
+			  <div class="bar3"></div>
+			</div>
+
+			<ul>
+				<li><a href="index.html" title = "Return Home">About</a></li>
+				<li><a href="calendar.html" title = "Calendar of Events">Calendar</a></li>
+				<li><a href="hikes.html" title = "Our Favorite Hikes">Hikes</a></li>
+				<li><a href="events.html" title = "Popular Events">Events</a></li>
+				<li><a href="https://www.facebook.com/groups/1452595711647692/" target="blank" title = "Join our Facebook Group">Facebook Group</a></li>
+				<li><a href="mailto:contact@genrev.club" title = "Send Us an Email">Email Us</a></li>
+			</ul>
+		</nav>
+
+	</section>
+
+	<!-- embedded google calendar -->
+	<section id = "googlecalendar">
+		<iframe src="https://calendar.google.com/calendar/embed?src=sbqrfoh4s5fhed7fke42uivsfs%40group.calendar.google.com&ctz=America/New_York" style="border: 0" width="800" height="600" scrolling="no"></iframe>
+	</section>
+
+	<!-- suggestion form plug -->
+<footer>
+	<h4 class = "infomarg">To suggest an adventure, please <a href="mailto:contact@genrev.club" title = "Send Us an Email">email us</a> or complete the <a href="events.html#suggest" title = "Suggestion form">suggestion form on the Events page</a>.</h4>
+</footer>
+
+</body>
+<script src="menu.js"></script>
+</html>
